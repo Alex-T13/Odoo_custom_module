@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_phones_phones,phones.phones,model_phones_phones,base.group_user,1,1,1,1
