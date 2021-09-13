@@ -16,13 +16,21 @@
 -->
 
     <!-- actions opening views on models -->
-<!--
-    <record model="ir.actions.act_window" id="phones.action_window">
+
+    <record model="ir.actions.act_window" id="phones_manufacturer_action_window">
       <field name="name">phones window</field>
-      <field name="res_model">phones.phones</field>
+      <field name="res_model">phones.manufacturer</field>
       <field name="view_mode">tree,form</field>
     </record>
--->
+
+    <!-- Top menu item -->
+    <menuitem id="phones_root_menu" name="Phones"
+              web_icon="phones, static/menu_root_icon.jpg"/>
+
+    <menuitem id="phones_manufacturer_menu"
+              name="Manufacturers"
+              parent="phones_root_menu"
+              action="phones_manufacturer_action_window"/>
 
     <!-- server action to the one above -->
 <!--

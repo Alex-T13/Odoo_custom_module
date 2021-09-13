@@ -1,30 +1,51 @@
 <odoo>
     <data>
+        <record model="phones.manufacturer" id="manufacturer0">
+            <field name="name">Xiaomi</field>
+        </record>
+        <record model="phones.manufacturer" id="manufacturer1">
+            <field name="name">Samsung</field>
+        </record>
+        <record model="phones.manufacturer" id="manufacturer2">
+            <field name="name">Apple</field>
+        </record>
 <!--
-          <record id="object0" model="phones.phones">
-            <field name="name">Object 0</field>
-            <field name="value">0</field>
-          </record>
-
-          <record id="object1" model="phones.phones">
-            <field name="name">Object 1</field>
-            <field name="value">10</field>
-          </record>
-
-          <record id="object2" model="phones.phones">
-            <field name="name">Object 2</field>
-            <field name="value">20</field>
-          </record>
-
-          <record id="object3" model="phones.phones">
-            <field name="name">Object 3</field>
-            <field name="value">30</field>
-          </record>
-
-          <record id="object4" model="phones.phones">
-            <field name="name">Object 4</field>
-            <field name="value">40</field>
-          </record>
+        <record model="brands.brands" id="brand0">
+            <field name="name">Redmi 9 4GB/64GB</field>
+            <field name="manufacturer_id">manufacturer0</field>
+        </record>
+        <record model="brands.brands" id="brand1">
+            <field name="name">Redmi Note 10 4GB/64GB</field>
+            <field name="manufacturer_id">manufacturer0</field>
+        </record>
+        <record model="brands.brands" id="brand2">
+            <field name="name">Mi 11 Ultra 12GB/256GB</field>
+            <field name="manufacturer_id">manufacturer0</field>
+        </record>
+        <record model="brands.brands" id="brand3">
+            <field name="name">Galaxy S21 Ultra 5G SM-G9980 16GB/512GB</field>
+            <field name="manufacturer_id">manufacturer1</field>
+        </record>
+        <record model="brands.brands" id="brand4">
+            <field name="name">Galaxy A52 SM-A525F/DS 4GB/128GB</field>
+            <field name="manufacturer_id">manufacturer1</field>
+        </record>
+        <record model="brands.brands" id="brand5">
+            <field name="name">Galaxy S20 SM-G980F/DS 8GB/128GB</field>
+            <field name="manufacturer_id">manufacturer1</field>
+        </record>
+        <record model="brands.brands" id="brand6">
+            <field name="name">iPhone 11 64GB</field>
+            <field name="manufacturer_id">manufacturer2</field>
+        </record>
+        <record model="brands.brands" id="brand7">
+            <field name="name">iPhone 12 128GB</field>
+            <field name="manufacturer_id">manufacturer2</field>
+        </record>
+        <record model="brands.brands" id="brand8">
+            <field name="name">Apple iPhone SE 64GB</field>
+            <field name="manufacturer_id">manufacturer2</field>
+        </record>
 -->
     </data>
 </odoo>

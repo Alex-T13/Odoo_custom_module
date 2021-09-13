@@ -1,2 +1,3 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_phones_phones,phones.phones,model_phones_phones,base.group_user,1,1,1,1
+access_phones_manufacturer,access_phones_manufacturer,phones.model_phones_manufacturer,base.group_user,1,1,1,1
+access_phones_brand,access_phones_brand,phones.model_phones_brand,base.group_user,1,1,1,1
