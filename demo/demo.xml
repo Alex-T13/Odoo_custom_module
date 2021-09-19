@@ -1,51 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <data>
-        <record model="phones.manufacturer" id="manufacturer0">
-            <field name="name">Xiaomi</field>
-        </record>
-        <record model="phones.manufacturer" id="manufacturer1">
-            <field name="name">Samsung</field>
-        </record>
-        <record model="phones.manufacturer" id="manufacturer2">
-            <field name="name">Apple</field>
-        </record>
-<!--
-        <record model="brands.brands" id="brand0">
-            <field name="name">Redmi 9 4GB/64GB</field>
-            <field name="manufacturer_id">manufacturer0</field>
-        </record>
-        <record model="brands.brands" id="brand1">
-            <field name="name">Redmi Note 10 4GB/64GB</field>
-            <field name="manufacturer_id">manufacturer0</field>
-        </record>
-        <record model="brands.brands" id="brand2">
-            <field name="name">Mi 11 Ultra 12GB/256GB</field>
-            <field name="manufacturer_id">manufacturer0</field>
-        </record>
-        <record model="brands.brands" id="brand3">
-            <field name="name">Galaxy S21 Ultra 5G SM-G9980 16GB/512GB</field>
-            <field name="manufacturer_id">manufacturer1</field>
-        </record>
-        <record model="brands.brands" id="brand4">
-            <field name="name">Galaxy A52 SM-A525F/DS 4GB/128GB</field>
-            <field name="manufacturer_id">manufacturer1</field>
-        </record>
-        <record model="brands.brands" id="brand5">
-            <field name="name">Galaxy S20 SM-G980F/DS 8GB/128GB</field>
-            <field name="manufacturer_id">manufacturer1</field>
-        </record>
-        <record model="brands.brands" id="brand6">
-            <field name="name">iPhone 11 64GB</field>
-            <field name="manufacturer_id">manufacturer2</field>
-        </record>
-        <record model="brands.brands" id="brand7">
-            <field name="name">iPhone 12 128GB</field>
-            <field name="manufacturer_id">manufacturer2</field>
-        </record>
-        <record model="brands.brands" id="brand8">
-            <field name="name">Apple iPhone SE 64GB</field>
-            <field name="manufacturer_id">manufacturer2</field>
-        </record>
--->
-    </data>
+  <data noupdate="1">
+    <record model="phones.manufacturer" id="manufacturer_1">
+      <field name="manufacturer_name">Xiaomi</field>
+    </record>
+    <record model="phones.manufacturer" id="manufacturer_2">
+      <field name="manufacturer_name">Samsung</field>
+    </record>
+    <record model="phones.manufacturer" id="manufacturer_3">
+      <field name="manufacturer_name">Apple</field>
+    </record>
+    <record model="phones.brand" id="brand0">
+      <field name="brand_name">Redmi 9 4GB/64GB</field>
+      <field name="manufacturer_id" ref="manufacturer_1"/>
+    </record>
+    <record model="phones.brand" id="brand1">
+      <field name="brand_name">Redmi Note 10 4GB/64GB</field>
+      <field name="manufacturer_id" ref="manufacturer_1"/>
+    </record>
+    <record model="phones.brand" id="brand2">
+      <field name="brand_name">Mi 11 Ultra 12GB/256GB</field>
+      <field name="manufacturer_id" ref="manufacturer_1"/>
+    </record>
+    <record model="phones.brand" id="brand3">
+      <field name="brand_name">Galaxy S21 Ultra 5G SM-G9980 16GB/512GB</field>
+      <field name="manufacturer_id" ref="manufacturer_2"/>
+    </record>
+    <record model="phones.brand" id="brand4">
+      <field name="brand_name">Galaxy A52 SM-A525F/DS 4GB/128GB</field>
+      <field name="manufacturer_id" ref="manufacturer_2"/>
+    </record>
+    <record model="phones.brand" id="brand5">
+      <field name="brand_name">Galaxy S20 SM-G980F/DS 8GB/128GB</field>
+      <field name="manufacturer_id" ref="manufacturer_2"/>
+    </record>
+    <record model="phones.brand" id="brand6">
+      <field name="brand_name">iPhone 11 64GB</field>
+      <field name="manufacturer_id" ref="manufacturer_3"/>
+    </record>
+    <record model="phones.brand" id="brand7">
+      <field name="brand_name">iPhone 12 128GB</field>
+      <field name="manufacturer_id" ref="manufacturer_3"/>
+    </record>
+    <record model="phones.brand" id="brand8">
+      <field name="brand_name">Apple iPhone SE 64GB</field>
+      <field name="manufacturer_id" ref="manufacturer_3"/>
+    </record>
+  </data>
 </odoo>
