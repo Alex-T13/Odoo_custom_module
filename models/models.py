@@ -3,7 +3,7 @@
 from odoo import models, fields, api
 
 
-class ProductInherit(models.Model):
+class ProductTemplate(models.Model):
     _inherit = 'product.template'
 
     manufacturer_id = fields.Many2one(
@@ -12,17 +12,22 @@ class ProductInherit(models.Model):
             string='Manufacturer',
             required=True
     )
-    brand_id = fields.Many2one(
+
+    model_id = fields.Many2one(
         comodel_name='phones.brand',
-        ondelete='cascade',
-        string='Brand',
-        required=True
+        string='Model',
+        domain="[('manufacturer_id', '=', manufacturer_id)]",
     )
 
+    # @api.onchange('manufacturer_id')
+    # def onchange_manufacturer_id(self):
+    #     for record in self:
+    #         return {'domain': {'brand_id': [('manufacturer_id', '=', record.manufacturer_id.id)]}}
+
     @api.onchange('manufacturer_id')
-    def onchange_manufacturer_id(self):
-        for record in self:
-            return {'domain': {'brand_id': [('manufacturer_id', '=', record.manufacturer_id.id)]}}
+    def _onchange_manufacturer_id(self):
+        if self.model_id and self.model_id.manufacturer_id != self.manufacturer_id:
+            self.model_id = None
 
 
 class Manufacturer(models.Model):
